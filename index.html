@@ -1,75 +1,92 @@
 <html>
-	<head>
-		<title>Meta</title>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-			body {
-				margin: 0px;
-				padding: 0px;
-				left: 0px;
-				right: 0px;
-				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-				sans-serif;
-				text-align: center;
-			}
+  <head>
+    <title>Meta</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        left: 0px;
+        right: 0px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+        text-align: center;
+      }
 
-			* {
-				outline: none;
-			}
+      * {
+        outline: none;
+      }
 
-			.logo {
-				position: fixed;
-				top: 50px;
-				width: 50px;
-				height: 50px;
-				right: 0px;
-				left: 0px;
-				margin: 0px auto;
-			}
+      .logo {
+        position: fixed;
+        top: 50px;
+        width: 50px;
+        height: 50px;
+        right: 0px;
+        left: 0px;
+        margin: 0px auto;
+      }
 
-			h1 {
-				font-weight: 400;
-			}
+      h1 {
+        font-weight: 400;
+      }
 
-			.main {
-				margin-top: 200px;
-			}
+      .main {
+        margin-top: 200px;
+      }
 
-			input {
-				border: solid #ddd 1px;
-				padding: 7px 10px;
-				border-radius: 3px;
-			}
+      input {
+        border: solid #ddd 1px;
+        padding: 7px 10px;
+        border-radius: 3px;
+      }
 
-			.avatar {
-				border-radius: 50000px;
-			}
-		</style>
-	</head>
-	<body>
-		<img class="logo" width="100%" height="100%" src="https://cdn.glitch.com/49352c7c-452e-41b2-a51a-3bf92a95fbd1%2FLogo%20(3).svg?1533663044501">
-		<div class="main">
-			<h1>Meta avatar generator</h1>
-			<h3>Usage:</h3>
-			<img class="avatar" src="https://gradient-avatar.glitch.me/Enter a username"> <br /><br />
-			<input class="username" placeholder="Enter a username" /><br /><br />
-		</div>
+      .avatar {
+        border-radius: 50000px;
+      }
+      
+      .sub {
+        position: fixed;
+        bottom: 10px;
+        left: 0px;
+        right: 0px;
+      }
+      
+      .sub a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://usemeta.com">
+      <img class="logo" width="100%" height="100%" src="https://cdn.glitch.com/49352c7c-452e-41b2-a51a-3bf92a95fbd1%2FLogo%20(3).svg?1533663044501" />
+    </a>
+    
+    <div class="main">
+      <h1>Meta avatar generator</h1>
+      <img class="avatar" src="https://gradient-avatar.glitch.me/Enter a username"> <br /><br />
+      <input class="username" placeholder="Enter a username" /><br /><br />
+    </div>
+    
+    <div class="sub">
+      <p>Made by <a href="https://usemeta.com">Meta</a>. <a href="https://github.com/usemeta/gradient-avatar-service">Source code</a>.</p>
+    </div>
 
-		<script>
-			document.querySelector('.username').addEventListener('keyup', (ev) => {
+    <script>
+      document.querySelector('.username').addEventListener('keyup', (ev) => {
         document.querySelector('.avatar').setAttribute('src', 'https://gradient-avatar.glitch.me/' + (ev.target.value != '' ? ev.target.value : 'Enter a username'));
         
         if (ev.keyCode == 13) {
           const src = document.querySelector('.avatar').getAttribute('src');
           window.open(src, '_blank').focus();
         }
-			});
+      });
 
-			document.querySelector('.avatar').addEventListener('click', (ev) => {
-			  const src = document.querySelector('.avatar').getAttribute('src');
+      document.querySelector('.avatar').addEventListener('click', (ev) => {
+        const src = document.querySelector('.avatar').getAttribute('src');
         window.open(src, '_blank').focus();
-			});
-		</script>
-	</body>
+      });
+    </script>
+  </body>
 </html>
