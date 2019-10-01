@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/usemeta/gradient-avatar/master/assets/example.png" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/varld/gradient-avatar/master/assets/example.png" /></p>
 
 <h1 align="center">Gradient Avatar</h1>
 
@@ -8,7 +8,7 @@
 
 Generate beautiful and unique avatars for your users.
 
-Powered by [gradient-avatar](https://github.com/usemeta/gradient-avatar)
+Powered by [gradient-avatar](https://github.com/varld/gradient-avatar)
 
 [Demo](https://gradient-avatar.glitch.me/)
 
@@ -22,4 +22,9 @@ https://gradient-avatar.glitch.me/<seed>
 
 ## License
 
-MIT © [Tobias Herber](http://tobihrbr.com)
+MIT © [Tobias Herber](https://herber.space)
+
+<p align="center">
+  <br/>
+  <img width="200px" src="https://github.com/varld/branding/blob/master/varld/Made%20by.svg" />
+</p>
