@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "A microservice for beautiful default avatars.",
   "main": "server.js",
+  "repository": "varld/gradient-avatar-service",
+  "author": {
+    "name": "Tobias Herber",
+    "email": "gh@herber.space",
+    "url": "https://herber.space"
+  },
   "scripts": {
     "start": "node server.js"
   },
